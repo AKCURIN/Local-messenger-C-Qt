@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ClientChatWidget</class> <!-- Определение класса виджета -->
+ <widget class="QWidget" name="ClientChatWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x> <!-- Начальная позиция виджета по оси X -->
+    <y>0</y> <!-- Начальная позиция виджета по оси Y -->
+    <width>400</width> <!-- Ширина виджета -->
+    <height>300</height> <!-- Высота виджета -->
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string> <!-- Заголовок окна виджета -->
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout"> <!-- Вертикальное расположение для виджета -->
+   <item>
+    <widget class="QListWidget" name="lstMessages"/> <!-- Список сообщений -->
+   </item>
+   <item>
+    <widget class="QWidget" name="wdgSendMessage" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout"> <!-- Горизонтальное расположение для виджета отправки сообщений -->
+      <item>
+       <widget class="QLabel" name="lblMessage">
+        <property name="text">
+         <string>Message:</string> <!-- Метка для поля ввода сообщения -->
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lnMessage"/> <!-- Поле ввода для сообщения -->
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnSend">
+        <property name="text">
+         <string>Send</string> <!-- Кнопка отправки сообщения -->
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="lblOpenFolder">
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;#&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#007af4;&quot;&gt;Open&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string> <!-- Ссылка для открытия папки -->
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

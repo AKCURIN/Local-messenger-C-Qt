@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x> <!-- Начальная позиция окна по оси X -->
+    <y>0</y> <!-- Начальная позиция окна по оси Y -->
+    <width>629</width> <!-- Ширина окна -->
+    <height>340</height> <!-- Высота окна -->
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Server</string> <!-- Заголовок окна -->
+  </property>
+  <widget class="QWidget" name="centralwidget"> <!-- Центральный виджет окна -->
+   <layout class="QHBoxLayout" name="horizontalLayout" stretch="3,1"> <!-- Горизонтальное расположение для центрального виджета -->
+    <item>
+     <widget class="QGroupBox" name="grpChats"> <!-- Группа виджетов для чатов -->
+      <property name="title">
+       <string>Chats</string> <!-- Заголовок группы чатов -->
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2"> <!-- Вертикальное расположение внутри группы чатов -->
+       <item>
+        <widget class="QTabWidget" name="tbClientsChat">
+         <property name="tabsClosable">
+          <bool>true</bool> <!-- Вкладки можно закрывать -->
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="grpClients"> <!-- Группа виджетов для клиентов -->
+      <property name="title">
+       <string>Clients</string> <!-- Заголовок группы клиентов -->
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout"> <!-- Вертикальное расположение внутри группы клиентов -->
+       <item>
+        <widget class="QListWidget" name="lstClients"/> <!-- Список клиентов -->
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton">
+         <property name="text">
+          <string>Disconnect All</string> <!-- Текст на кнопке отключения всех клиентов -->
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar"> <!-- Меню бар окна -->
+   <property name="geometry">
+    <rect>
+     <x>0</x> <!-- Начальная позиция меню бара по оси X -->
+     <y>0</y> <!-- Начальная позиция меню бара по оси Y -->
+     <width>629</width> <!-- Ширина меню бара -->
+     <height>25</height> <!-- Высота меню бара -->
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/> <!-- Статус бар окна -->
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
